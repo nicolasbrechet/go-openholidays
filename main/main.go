@@ -1,19 +1,3 @@
-# go-openholidays
-
-A golang client library for the [Open Holidays Api](https://www.openholidaysapi.org)
-
-
-## How it's made ?
-
-1. Install oapi-codegen : `go get github.com/deepmap/oapi-codegen/cmd/oapi-codegen`
-1. Generate types: `oapi-codegen -generate types -package openholidays -o types.go https://openholidaysapi.org/swagger/v1/swagger.json`
-1. Generate client: `oapi-codegen -generate client -package yourPackageName -o client.go https://openholidaysapi.org/swagger/v1/swagger.json`
-
-## Usage
-
-Example: Get the public holidays for Canton de Vaud in 2025
-
-```golang
 package main
 
 import (
@@ -82,19 +66,3 @@ func main() {
 	}
 
 }
-```
-
-Result:
-
-```bash
-❯ go run main/main.go
-Holiday: Nouvel an on 2025-01-01
-Holiday: Saint-Berchtold on 2025-01-02
-Holiday: Vendredi saint on 2025-04-18
-Holiday: Lundi de Pâques on 2025-04-21
-Holiday: Ascension on 2025-05-29
-Holiday: Lundi de Pentecôte on 2025-06-09
-Holiday: Fête nationale suisse on 2025-08-01
-Holiday: Jeûne fédéral on 2025-09-21
-Holiday: Noël on 2025-12-25
-```
