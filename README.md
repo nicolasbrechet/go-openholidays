@@ -7,7 +7,7 @@ A golang client library for the [Open Holidays Api](https://www.openholidaysapi.
 
 1. Install oapi-codegen : `go get github.com/deepmap/oapi-codegen/cmd/oapi-codegen`
 1. Generate types: `oapi-codegen -generate types -package openholidays -o types.go https://openholidaysapi.org/swagger/v1/swagger.json`
-1. Generate client: `oapi-codegen -generate client -package yourPackageName -o client.go https://openholidaysapi.org/swagger/v1/swagger.json`
+1. Generate client: `oapi-codegen -generate client -package openholidays -o client.go https://openholidaysapi.org/swagger/v1/swagger.json`
 
 ## Usage
 
