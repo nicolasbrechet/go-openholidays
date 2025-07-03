@@ -1,4 +1,4 @@
-module openholidays
+module github.com/nicolasbrechet/go-openholidays
 
 go 1.23.4
 
